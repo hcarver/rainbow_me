@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+
+    <div class="span10 offset1">
+
+   <div class="hero-unit" style="line-height: 18px;">
+
+     <h1>You've been Rainbowed!</h1>
+     <h4>Please help us spread the rainbow by sharing on Twitter, Facebook etc.</h4>
+     <% social_share_button_tag('I got a rainbow on my profile for LBGT solidarity during Sochi', url: root_url) %>
+     <p>
+      <div class="social-likes" data-url="http://rainbows-for-sochi.herokuapp.com/" data-title="Get a Rainbow for Sochi on your profile">
+	<div class="facebook" title="Share link on Facebook">Facebook</div>
+	<div class="twitter" data-via="h_carver" title="Share link on Twitter">Twitter</div>
+	<div class="plusone" title="Share link on Google+">Google+</div>
+      </div>
+</p>
+<a href="https://twitter.com/h_carver" class="twitter-follow-button" data-show-count="false">Created by @h_carver</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <div class="row-fluid">
+      <div class="span12 text-center">
+        <p>
+        <%= link_to 'Download your photo', "#{@download_url}", {class: 'btn btn-primary'} %>
+        </p>
+        <img src="<%= @photo_url%>">
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
